@@ -1,6 +1,7 @@
 set number
 set termguicolors
 
+autocmd VimEnter * :silent exec "!kill -s SIGWINCH $PPID"
 
 call plug#begin()
 
