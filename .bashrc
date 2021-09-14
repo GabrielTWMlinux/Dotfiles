@@ -25,9 +25,12 @@ PS1='[\u@\h \W]\$ '
 # XBPS
 alias xr='sudo xbps-remove'
 alias xq='xbps-query -Rs'
-
+alias xo='sudo xbps-remove -o'
+alias xi='sudo xbps-install'
 
 # Files
 alias rc.lua='vim .config/awesome/rc.lua'
 alias yml='vim .config/alacritty/alacritty.yml'
 alias bashrc='vim .bashrc'
+alias gtk='vim .config/gtk-3.0/gtk.css'
+alias roteiros='vim Documentos/TWMLINUX'
