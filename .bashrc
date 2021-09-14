@@ -7,6 +7,7 @@
 # Comandos básicos terminal
 alias la='ls -a'
 alias ll='ls -l'
+alias lla='ls -al'
 alias ls='ls --color=auto'
 alias rm='rm -r'
 
