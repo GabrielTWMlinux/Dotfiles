@@ -138,6 +138,8 @@ alias bashrc='vim .bashrc'
 alias gtk='vim .config/gtk-3.0/gtk.css'
 alias roteiros='vim Documentos/TWMLINUX'
 
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
