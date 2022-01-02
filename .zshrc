@@ -1,3 +1,22 @@
+#PROMPT
+PROMPT='%F{blue}%1~%f %F{white}%f  '
+
+#RIGHT PROMPT
+RPROMPT='%F{blue}%*'
+
+autoload -U compinit
+
+
+compinit
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
+
+
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+setopt SHARE_HISTORY
+
 # # Comandos básicos terminal
 alias la='ls -a'
 alias ll='ls -l'
@@ -27,20 +46,5 @@ alias yml='vim .config/alacritty/alacritty.yml'
 alias bashrc='vim .bashrc'
 alias gtk='vim .config/gtk-3.0/gtk.css'
 alias roteiros='vim Documentos/TWMLINUX'
-
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
-
-#PROMPT
-PROMPT='%F{blue}%1~%f %F{white}%f  '
-
-#RIGHT PROMPT
-RPROMPT='%F{blue}%*'
-
-
-
-# History in cache directory:
-HISTSIZE=10000
-SAVEHIST=10000
-HISTFILE=~/.zsh_history
-setopt INC_APPEND_HISTORY
-setopt SHARE_HISTORY
+alias zshrc='vim .zshrc'
+alias bashrc='vim .bashrc'
