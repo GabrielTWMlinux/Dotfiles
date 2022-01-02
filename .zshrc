@@ -5,8 +5,6 @@ PROMPT='%F{blue}%1~%f %F{white}%f  '
 RPROMPT='%F{blue}%*'
 
 autoload -U compinit
-
-
 compinit
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}'
 
@@ -17,7 +15,7 @@ HISTFILE=~/.zsh_history
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-# # Comandos básicos terminal
+# Comandos básicos terminal
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
@@ -39,6 +37,7 @@ alias xr='sudo xbps-remove'
 alias xq='xbps-query -Rs'
 alias xo='sudo xbps-remove -o'
 alias xl='sudo xbps-install'
+alias xu='sudo xbps-install -Su'
 
 # Files
 alias rc.lua='vim .config/awesome/rc.lua'
