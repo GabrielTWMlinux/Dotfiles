@@ -30,8 +30,6 @@ alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
 # Aplicativos
 alias vim='nvim'
-alias ncspot='./ncspot'
-alias ufetch='./ufetch'
 alias unrar='unrar x'
 alias fetch='clear && neofetch'
 alias feh='devour feh'
