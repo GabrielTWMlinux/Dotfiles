@@ -218,7 +218,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x090909'
+    background: '0x0e0e0e'
     foreground: '#ffffff'
 
     # Bright and dim foreground colors
