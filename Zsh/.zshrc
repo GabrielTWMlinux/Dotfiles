@@ -35,12 +35,17 @@ alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 
-# XBPS
-alias xr='sudo xbps-remove -R'
-alias xq='xbps-query -Rs'
-alias xo='sudo xbps-remove -o'
-alias xl='sudo xbps-install'
-alias xu='sudo xbps-install -Su'
+# VOID/ARCH
+#alias xr='sudo xbps-remove -R'
+#alias xq='xbps-query -Rs'
+#alias xo='sudo xbps-remove -o'
+#alias xl='sudo xbps-install'
+#alias xu='sudo xbps-install -Su'
+alias pacS='sudo pacman -S'
+alias pacR='sudo pacman -R'
+alias pacSyu='sudo pacman -Syu'
+alias pacQd='sudo pacman -Qtdq'
+
 
 # Files
 alias rc.lua='vim .config/awesome/rc.lua'
