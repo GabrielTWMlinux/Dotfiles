@@ -34,17 +34,14 @@ alias unrar='unrar x'
 alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
+alias dl='youtube-dl'
 
-# VOID/ARCH
-#alias xr='sudo xbps-remove -R'
-#alias xq='xbps-query -Rs'
-#alias xo='sudo xbps-remove -o'
-#alias xl='sudo xbps-install'
-#alias xu='sudo xbps-install -Su'
-alias pacS='sudo pacman -S'
-alias pacR='sudo pacman -R'
-alias pacSyu='sudo pacman -Syu'
-alias pacQd='sudo pacman -Qtdq'
+# VOID
+alias xr='sudo xbps-remove -R'
+alias xq='xbps-query -Rs'
+alias xo='sudo xbps-remove -o'
+alias xl='sudo xbps-install'
+alias xu='sudo xbps-install -Su'
 
 
 # Files
@@ -63,3 +60,4 @@ alias keybinds='vim Documentos/Keybinds'
 
 LS_COLORS='rs=0:di=1;97:fi=1;90';
 export LS_COLORS
+
