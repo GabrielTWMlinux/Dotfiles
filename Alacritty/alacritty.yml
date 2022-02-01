@@ -145,7 +145,7 @@ font:
   italic:
     # Font family
     #
-    # If the italic family inot specified, it will fall back to the
+    # If the italic familyinot specified, it will fall back to the
     # value specified for the normal font.
     family: Inconsolata
     # family: CodeNewRoman Nerd Font
@@ -580,4 +580,7 @@ key_bindings:
   - { key: PageDown,  mods: None,          action: ScrollPageDown, mode: ~Alt  }
   - { key: Home,      mods: Shift,         action: ScrollToTop,    mode: ~Alt  }
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
+  - { key: Down,      mods: Shift,         action: ScrollLineDown, mode: ~Alt  }
+  - { key: Up,        mods: Shift,         action: ScrollLineUp  , mode: ~Alt  }
+ 
  
