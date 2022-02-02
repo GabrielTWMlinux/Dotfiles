@@ -56,7 +56,7 @@ alias roteiros='vim Documentos/TWMLINUX'
 alias zshrc='vim .zshrc'
 alias bashrc='vim .bashrc'
 alias picom.conf='vim .config/picom/picom.conf'
-alias keybinds='vim Documentos/Keybinds'
+alias keybinds='vim .config/awesome/Keybinds'
 
 LS_COLORS='rs=0:di=1;97:fi=1;90';
 export LS_COLORS
