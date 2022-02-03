@@ -36,7 +36,7 @@ alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
 
-# VOID
+# Void
 alias xr='sudo xbps-remove -R'
 alias xq='xbps-query -Rs'
 alias xo='sudo xbps-remove -o'
