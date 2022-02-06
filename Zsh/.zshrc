@@ -16,6 +16,9 @@ setopt SHARE_HISTORY
 
 PATH=$PATH:$HOME/Scripts
 
+# Enable vi mode
+bindkey -v
+
 # Comandos básicos terminal
 alias la='ls -a'
 alias ll='ls -l'
@@ -35,6 +38,7 @@ alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
+alias fetch6000='fm6000 -c blue'
 
 # Void
 alias xr='sudo xbps-remove -R'
@@ -57,6 +61,7 @@ alias zshrc='vim .zshrc'
 alias bashrc='vim .bashrc'
 alias picom.conf='vim .config/picom/picom.conf'
 alias keybinds='vim .config/awesome/Keybinds'
+alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 
 LS_COLORS='rs=0:di=1;97:fi=1;90';
 export LS_COLORS
