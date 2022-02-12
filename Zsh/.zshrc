@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%F{8}%1~%f %F{white}%f  '
+PROMPT='%F{111}%1~%f %F{white}%f  '
 
 # RIGHT PROMPT
 # RPROMPT='%F{blue}%*'
@@ -16,7 +16,7 @@ setopt SHARE_HISTORY
 
 PATH=$PATH:$HOME/Scripts
 
-# Enable vi mode
+# Enable vim mode
 bindkey -v
 
 # Comandos básicos terminal
@@ -63,6 +63,8 @@ alias picom.conf='vim .config/picom/picom.conf'
 alias keybinds='vim .config/awesome/Keybinds'
 alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 
-LS_COLORS='rs=0:di=1;97:fi=1;90';
+
+#LS_COLORS='rs=0:di=1;97:fi=1;90';
+LS_COLORS='rs=0:di=1;36:fi=1;30';
 export LS_COLORS
 
