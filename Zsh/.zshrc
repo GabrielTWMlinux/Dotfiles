@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%F{111}%1~%f %F{white}%f  '
+PROMPT='%F{8}%1~%f %F{white}%f  '
 
 # RIGHT PROMPT
 # RPROMPT='%F{blue}%*'
@@ -16,9 +16,6 @@ setopt SHARE_HISTORY
 
 PATH=$PATH:$HOME/Scripts
 
-# Enable vim mode
-bindkey -v
-
 # Comandos básicos terminal
 alias la='ls -a'
 alias ll='ls -l'
@@ -34,7 +31,7 @@ alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 # Aplicativos
 alias vim='nvim'
 alias unrar='unrar x'
-alias fetch='clear && neofetch'
+alias fetch='clear && ufetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
@@ -64,7 +61,7 @@ alias keybinds='vim .config/awesome/Keybinds'
 alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 
 
-#LS_COLORS='rs=0:di=1;97:fi=1;90';
-LS_COLORS='rs=0:di=1;36:fi=1;30';
+LS_COLORS='rs=0:di=1;97:fi=1;90';
+#LS_COLORS='rs=0:di=1;34:fi=1;30';
 export LS_COLORS
 
