@@ -1,9 +1,11 @@
 # .bashrc
 
+PS1='\[\e[1;30m\]\W \[\e[0m\]  '
 
 # If not running interactively, don't do anything
 [[ $- != *i* ]] && return
 
+PATH=$PATH:$HOME/Scripts
 
 # Comandos básicos terminal
 alias la='ls -a'
@@ -19,17 +21,19 @@ alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
 # Aplicativos
 alias vim='nvim'
-alias ncspot='./ncspot'
-alias ufetch='./ufetch'
-# PS1='[\u@\h \W]\$ '
-# PS1="\e[0;34m\$ \e[m"
-PS1=' \[\e[1;30m\]\W \[\e[0m\]  '
+alias unrar='unrar x'
+alias fetch='clear && ufetch'
+alias feh='devour feh'
+alias mpv='devour mpv'
+alias dl='youtube-dl'
+alias fetch6000='fm6000 -c blue'
 
 # Void
 alias xr='sudo xbps-remove'
 alias xq='xbps-query -Rs'
 alias xo='sudo xbps-remove -o'
 alias xl='sudo xbps-install'
+alias xu='sudo xbps-install -Su'
 
 # Files
 alias rc.lua='vim .config/awesome/rc.lua'
@@ -40,3 +44,7 @@ alias roteiros='vim Documentos/TWMLINUX'
 alias zshrc='vim .zshrc'
 alias picom.conf='vim .config/picom/picom.conf'
 alias keybinds='vim .config/awesome/Keybinds'
+alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
+
+
+. "$HOME/.cargo/env"
