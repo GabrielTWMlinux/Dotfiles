@@ -145,7 +145,7 @@ font:
   italic:
     # Font family
     #
-    # If the italic familyinot specified, it will fall back to the
+    # If the italic familynot specified, it will fall back to the
     # value specified for the normal font.
     family: Inconsolata
     # family: CodeNewRoman Nerd Font
@@ -333,14 +333,14 @@ colors:
 # Allow terminal applications to change Alacritty's window title.
 dynamic_title: true
 
-#cursor:
+cursor:
   # Cursor style
   #
   # Values for `style`:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  #style: Block
+  style: Beam
 
   # If this is `true`, the cursor will be rendered as a hollow box when the
   # window is not focused.
@@ -582,5 +582,3 @@ key_bindings:
   - { key: End,       mods: Shift,         action: ScrollToBottom, mode: ~Alt  }
   - { key: Down,      mods: Shift,         action: ScrollLineDown, mode: ~Alt  }
   - { key: Up,        mods: Shift,         action: ScrollLineUp  , mode: ~Alt  }
- 
- 
