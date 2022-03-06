@@ -70,7 +70,7 @@ font:
   # as modifying the line spacing, and `offset.x` as modifying the letter spacing.
   offset:
     x: 0
-    y: 3
+    y: 4
 
 
 # If `true`, bold text is drawn using the bright color variants.
