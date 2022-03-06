@@ -3,6 +3,7 @@
 env:
   TERM: xterm-256color
 
+
 ##################################
 ############# WINDOWS ############
 ##################################
@@ -32,10 +33,6 @@ window:
     # General application class
     general: Alacritty
 
-scrolling:
-  # Maximum number of lines in the scrollback buffer.
-  # Specifying '0' will disable scrolling.
-  history: 5000
 
 ##################################
 ############## FONTS #############
@@ -76,6 +73,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
+
 ##################################
 ############# COLORS #############
 ##################################
@@ -88,7 +86,7 @@ colors:
 
   # Selection colors
   selection:
-    text: '#ffffff'
+    text: '#000000'
 
   # Normal colors
   normal:
@@ -116,9 +114,19 @@ colors:
 # Allow terminal applications to change Alacritty's window title.
 dynamic_title: true
 
-cursor:
-  style: Block
 
+##################################
+############# CURSOR #############
+##################################
+
+cursor:
+  style: Beam
+
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 5000
 
 
 ##################################
