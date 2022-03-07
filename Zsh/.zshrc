@@ -1,5 +1,5 @@
 #PROMPT
-PROMPT='%F{8}%1~%f %F{white}%f  '
+PROMPT='%F{8}%1~%f %F{White}%f  '
 
 # RIGHT PROMPT
 # RPROMPT='%F{blue}%*'
@@ -48,6 +48,7 @@ alias xu='sudo xbps-install -Su'
 # Files
 alias rc.lua='vim .config/awesome/rc.lua'
 alias i3config='vim .config/i3/config'
+alias herbs='vim .config/herbstluftwm/autostart'
 alias bspwmrc='vim .config/bspwm/bspwmrc'
 alias sxhkdrc='vim .config/sxhkd/sxhkdrc'
 alias yml='vim .config/alacritty/alacritty.yml'
@@ -64,4 +65,5 @@ alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 LS_COLORS='rs=0:di=1;97:fi=1;90';
 #LS_COLORS='rs=0:di=1;34:fi=1;30';
 export LS_COLORS
+
 
