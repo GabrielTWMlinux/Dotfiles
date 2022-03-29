@@ -1,0 +1,9 @@
+set norestoretabs
+set firefoxmode=always
+set ignorecase
+
+set downloadpath=~/Downloads/
+
+set search=https://google.com/search?q=%s
+
+colorscheme tokyo
