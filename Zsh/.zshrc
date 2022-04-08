@@ -2,7 +2,9 @@
 ############# PROMPT #############
 ##################################
 
-PROMPT='%F{45}%1~%f %F{White}%f  '
+#PROMPT='%F{103}%1~%f %F{White}%f  '
+PROMPT='%F{8}%1~%f %F{White}%f  '
+
 
 ##################################
 ############# BÁSICO #############
@@ -20,6 +22,7 @@ setopt SHARE_HISTORY
 
 PATH=$PATH:$HOME/Scripts
 
+
 ##################################
 ############# ALIAS ##############
 ##################################
@@ -34,9 +37,10 @@ alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
 alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
+alias tar='tar -zxvf'
 alias vim='nvim'
 alias unrar='unrar x'
-alias fetch='clear && ufetch'
+alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
@@ -59,15 +63,17 @@ alias gtk='vim .config/gtk-3.0/gtk.css'
 alias roteiros='vim Documentos/TWMLINUX'
 alias zshrc='vim .zshrc'
 alias bashrc='vim .bashrc'
+alias init.vim='vim .config/nvim/init.vim'
 alias picom.conf='vim .config/picom/picom.conf'
 alias keybinds='vim .config/awesome/Keybinds'
 alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 alias kitty.conf='vim .config/kitty/kitty.conf'
+
 
 ##################################
 ############# COLORS #############
 ##################################
 
 #LS_COLORS='rs=0:di=1;97:fi=1;90';
-LS_COLORS='rs=0:di=1;81:fi=1;30';
+LS_COLORS='rs=0:di=1;81:fi=1;30:ln=1;34'
 export LS_COLORS
