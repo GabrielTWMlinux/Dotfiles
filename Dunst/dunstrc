@@ -24,7 +24,7 @@
     # dynamic width from 0 to 300
     # width = (0, 300)
     # constant width of 300
-    width = 250
+    width = 230
 
     # The maximum height of a single notification, excluding the frame.
     height = 300
@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 5x30
+    offset = 5x10
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -131,7 +131,7 @@
     #        clients that send markup even though it's not enabled on the
     #        server. Dunst will try to strip the markup but the parsing is
     #        simplistic so using this option outside of matching rules for
-    #        specific applications *IS GREATLY DISCURAGED*.
+    #        specific applications *IS GREALY DISCURAGED*.
     #
     # no:    Disable markup parsing, incoming notifications will be treated as
     #        plain text. Dunst will not advertise that it has the body-markup
@@ -292,14 +292,14 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#222222"
-    foreground = "#888888"
+    background = "#080808"
+    foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with low urgency, uncomment to enable
     #default_icon = /path/to/icon
 
 [urgency_normal]
-    background = "#111118"
+    background = "#080808"
     foreground = "#ffffff"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
