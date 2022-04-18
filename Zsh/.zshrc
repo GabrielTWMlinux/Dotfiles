@@ -2,8 +2,8 @@
 ############# PROMPT #############
 ##################################
 
-#PROMPT='%F{103}%1~%f %F{White}%f  '
-PROMPT='%F{242}%1~%f %F{White}%f  '
+#PROMPT='%F{8}%1~%f %F{White}%f  '
+PROMPT='%F{111}%1~%f %F{White}%f  '
 
 
 ##################################
@@ -52,11 +52,11 @@ alias xo='sudo xbps-remove -o'
 alias xl='sudo xbps-install'
 alias xu='sudo xbps-install -Su'
 
+alias cddwm='cd .config/dwm'
+alias cdawesome='cd .config/awesome'
+
 alias rc.lua='vim .config/awesome/rc.lua'
 alias i3config='vim .config/i3/config'
-alias herbs='vim .config/herbstluftwm/autostart'
-alias bspwmrc='vim .config/bspwm/bspwmrc'
-alias sxhkdrc='vim .config/sxhkd/sxhkdrc'
 alias yml='vim .config/alacritty/alacritty.yml'
 alias bashrc='vim .bashrc'
 alias gtk='vim .config/gtk-3.0/gtk.css'
@@ -65,7 +65,7 @@ alias zshrc='vim .zshrc'
 alias bashrc='vim .bashrc'
 alias init.vim='vim .config/nvim/init.vim'
 alias picom.conf='vim .config/picom/picom.conf'
-alias keybinds='vim .config/awesome/Keybinds'
+alias keybinds='vim Documentos/Keybinds'
 alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 alias kitty.conf='vim .config/kitty/kitty.conf'
 
