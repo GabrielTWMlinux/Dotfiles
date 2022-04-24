@@ -2,8 +2,9 @@
 ############# PROMPT #############
 ##################################
 
-#PROMPT='%F{8}%1~%f %F{White}%f  '
-PROMPT='%F{111}%1~%f %F{White}%f  '
+#PROMPT='%F{8}$%f '
+PROMPT='%F{243}%1~%f %F{White}%f  '
+#PROMPT='%F{111}%1~%f %F{White}%f  '
 
 
 ##################################
@@ -20,7 +21,7 @@ HISTFILE=~/.zsh_history
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
-PATH=$PATH:$HOME/Scripts
+PATH=$PATH:$HOME/.config/Scripts
 
 
 ##################################
@@ -45,6 +46,7 @@ alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
 alias fetch6000='fm6000 -c blue'
+alias mupdf='devour mupdf'
 
 alias xr='sudo xbps-remove -R'
 alias xq='xbps-query -Rs'
