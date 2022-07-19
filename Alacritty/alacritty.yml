@@ -10,6 +10,7 @@ env:
 window:
   #  columns: 0
   #  lines: 0
+  opacity: 0.75
 
   #position:
   #  x: 0
@@ -80,7 +81,7 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x17191a'
+    background: '0x0b0b0f'
     foreground: '#ffffff'
 
   # Selection colors
