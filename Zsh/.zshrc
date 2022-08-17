@@ -3,8 +3,8 @@
 ##################################
 
 #PROMPT='%F{8}$%f '
-PROMPT='%F{243}%1~%f %F{White}%f  '
-#PROMPT='%F{111}%1~%f %F{White}%f  '
+PROMPT='%F{243}%1~%f %F{White}%f  '
+#PROMPT='%F{111}%1~%f %F{White}%f  '
 
 
 ##################################
@@ -21,8 +21,9 @@ HISTFILE=~/.zsh_history
 setopt INC_APPEND_HISTORY
 setopt SHARE_HISTORY
 
+xset r rate 300 50
 PATH=$PATH:$HOME/.config/Scripts
-
+ufetch
 
 ##################################
 ############# ALIAS ##############
@@ -77,5 +78,5 @@ alias kitty.conf='vim .config/kitty/kitty.conf'
 ##################################
 
 #LS_COLORS='rs=0:di=1;97:fi=1;90';
-LS_COLORS='rs=0:di=1;81:fi=1;30:ln=1;34'
+LS_COLORS='rs=0:di=1;34:fi=1;30:ln=1;34'
 export LS_COLORS
