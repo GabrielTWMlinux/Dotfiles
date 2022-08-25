@@ -81,35 +81,48 @@ draw_bold_text_with_bright_colors: true
 colors:
   # Default colors
   primary:
-    background: '0x16161E'
+    background: '0x11111b'
     foreground: '#ffffff'
 
   # Selection colors
   selection:
     text: '#000000'
+    # Normal colors
+    normal:
+      black:   '#5C5F77' # subtext1
+      red:     '#D20F39' # red
+      green:   '#40A02B' # green
+      yellow:  '#DF8E1D' # yellow
+      blue:    '#1E66F5' # blue
+      magenta: '#EA76CB' # pink
+      cyan:    '#179299' # teal
+      white:   '#ACB0BE' # surface2
 
-  # Normal colors
-  normal:
-    black:   '0x1c1f24'
-    red:     '0xff6c6b'
-    green:   '0x98be65'
-    yellow:  '0xda8548'
-    blue:    '0x51afef'
-    magenta: '0xc678dd'
-    cyan:    '0x5699af'
-    white:   '0xffffff'
+    # Bright colors
+    bright:
+      black:   '#6C6F85' # subtext0
+      red:     '#D20F39' # red
+      green:   '#40A02B' # green
+      yellow:  '#DF8E1D' # yellow
+      blue:    '#1E66F5' # blue
+      magenta: '#EA76CB' # pink
+      cyan:    '#179299' # teal
+      white:   '#BCC0CC' # surface1
 
-  # Bright colors
-  bright:
-    black:   '0x5b6268'
-    red:     '0xda8548'
-    green:   '0x4db5bd'
-    yellow:  '0xecbe7b'
-    blue:    '0x598de2'   # This is 2257a0 in Doom Emacs but I lightened it.
-    magenta: '0xa9a1e1'
-    cyan:    '0x40a6d9'
-    white:   '0xdfdfdf'
+    # Dim colors
+    dim:
+      black:   '#5C5F77' # subtext1
+      red:     '#D20F39' # red
+      green:   '#40A02B' # green
+      yellow:  '#DF8E1D' # yellow
+      blue:    '#1E66F5' # blue
+      magenta: '#EA76CB' # pink
+      cyan:    '#179299' # teal
+      white:   '#ACB0BE' # surface2
 
+    indexed_colors:
+      - { index: 16, color: '#FE640B' }
+      - { index: 17, color: '#DC8A78' }
 
 # Allow terminal applications to change Alacritty's window title.
 dynamic_title: true
