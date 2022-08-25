@@ -3,8 +3,8 @@
 ##################################
 
 #PROMPT='%F{8}$%f '
-PROMPT='%F{243}%1~%f %F{White}%f  '
-#PROMPT='%F{111}%1~%f %F{White}%f  '
+#PROMPT='%F{243}%1~%f %F{White}%f  '
+PROMPT='%F{#6c7086}%1~%f %F{White}%f  '
 
 
 ##################################
@@ -23,7 +23,6 @@ setopt SHARE_HISTORY
 
 xset r rate 300 50
 PATH=$PATH:$HOME/.config/Scripts
-ufetch
 
 ##################################
 ############# ALIAS ##############
@@ -39,6 +38,7 @@ alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
 alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
+alias ncspot='~/.config/ncspot/ncspot'
 alias tar='tar -zxvf'
 alias vim='nvim'
 alias unrar='unrar x'
