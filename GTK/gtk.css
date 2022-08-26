@@ -1,32 +1,43 @@
 /* base background color of selections */
-@define-color theme_selected_bg_color #345e81;
+@define-color theme_selected_bg_color #94e2d5;
+@define-color theme_selected_fg_color #000000;
 
-@define-color theme_selected_bg_color #value-of-your-choice;
 
+*:window{
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+}
 
 *:selected{
     background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 *.view:selected {
     background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
-textview selection {
+textview selection { 
     background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
 selection {
     background-color: @theme_selected_bg_color;
- } 
+    color: @theme_selected_fg_color;
+} 
 
 menu menuitem:hover,
 .menu menuitem:hover {
-     background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
+};
 }
 
 switch:checked {
-   background-color: @theme_selected_bg_color;
+    background-color: @theme_selected_bg_color;
+    color: @theme_selected_fg_color;
 }
 
  notebook > header.top > tabs > tab:checked { 
