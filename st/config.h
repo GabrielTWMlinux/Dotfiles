@@ -27,7 +27,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.1;
+static float chscale = 1.12;
 
 /*
  * word delimiter string
@@ -121,7 +121,7 @@ static const char *colorname[] = {
 	"#ACB0BE",
 
 	/* 8 bright colors */
-	"gray50",
+	"#474747",
 	"#D20F39",
 	"#40a02b",
 	"#df8e1d",
@@ -133,10 +133,10 @@ static const char *colorname[] = {
 	[255] = 0,
 
 	/* more colors can be added after 255 to use with DefaultXX */
-	"#CCCCCC",
+	"#ffffff",
 	"#000000",
 	"#FFFFFF", /* default foreground colour */
-	"#13131B", /* default background colour */
+	"#111118", /* default background colour */
 };
 
 
@@ -162,7 +162,7 @@ static unsigned int cursorshape = 6;
  * Default columns and rows numbers
  */
 
-static unsigned int cols = 80;
+static unsigned int cols = 120;
 static unsigned int rows = 24;
 
 /*
@@ -211,8 +211,8 @@ static Shortcut shortcuts[] = {
 	{ ControlMask,          XK_equal,       zoom,           {.f = +1} },
 	{ ControlMask,          XK_minus,       zoom,           {.f = -1} },
 	{ ControlMask,          XK_0,           zoomreset,      {.f =  0} },
-	{ MODKEY,               XK_C,           clipcopy,       {.i =  0} },
-	{ MODKEY,               XK_V,           clippaste,      {.i =  0} },
+	{ ControlMask,          XK_c,           clipcopy,       {.i =  0} },
+	{ ControlMask,          XK_v,           clippaste,      {.i =  0} },
 	{ TERMMOD,              XK_Y,           selpaste,       {.i =  0} },
 	{ ShiftMask,            XK_Insert,      selpaste,       {.i =  0} },
 	{ MODKEY,               XK_Num_Lock,    numlock,        {.i =  0} },
