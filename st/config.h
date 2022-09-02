@@ -6,7 +6,7 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Inconsolata:pixelsize=22:antialias=true:autohint=true";
-static int borderpx = 15;
+static int borderpx = 9;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -27,7 +27,7 @@ char *vtiden = "\033[?6c";
 
 /* Kerning / character bounding-box multipliers */
 static float cwscale = 1.0;
-static float chscale = 1.12;
+static float chscale = 1.14;
 
 /*
  * word delimiter string
@@ -103,7 +103,7 @@ static const char *colorname[] = {
 	"#D20F39",
 	"#40A02B",
 	"#DF8E1D",
-	"#1E66F5",
+	"#3475f6",
 	"#EA76CB",
 	"#179299",
 	"#dddddd",
@@ -113,7 +113,7 @@ static const char *colorname[] = {
 	"#D20F39",
 	"#40a02b",
 	"#df8e1d",
-	"#1E66F5",
+	"#3475f6",
 	"#EA76CB",
 	"#179299",
 	"#BCC0CC",
