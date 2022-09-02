@@ -34,6 +34,11 @@ alias lla='ls -al'
 alias rm='rm -r'
 alias ls='ls --color=auto'
 
+alias dwm='cd ~/.config/dwm'
+alias blocks='cd ~/.config/dwm/dwmblocks'
+alias dmenu='cd ~/.config/dwm/dmenu'
+alias sterm='cd ~/.config/st/'
+
 alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
 alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
@@ -80,3 +85,13 @@ alias kitty.conf='vim .config/kitty/kitty.conf'
 #LS_COLORS='rs=0:di=1;97:fi=1;90';
 LS_COLORS='rs=0:di=1;34:fi=1;30:ln=1;34'
 export LS_COLORS
+
+##################################
+############## XDEB ##############
+##################################
+
+
+export XDEB_OPT_DEPS=true
+export XDEB_OPT_SYNC=true
+export XDEB_OPT_WARN_CONFLICT=true
+export XDEB_OPT_FIX_CONFLICT=true
