@@ -28,16 +28,18 @@ PATH=$PATH:$HOME/.config/Scripts
 ############# ALIAS ##############
 ##################################
 
+alias ls='ls --color=auto'
 alias la='ls -a'
 alias ll='ls -l'
 alias lla='ls -al'
 alias rm='rm -r'
-alias ls='ls --color=auto'
+alias cp='cp -r'
 
 alias dwm='cd ~/.config/dwm'
 alias blocks='cd ~/.config/dwm/dwmblocks'
 alias dmenu='cd ~/.config/dwm/dmenu'
 alias sterm='cd ~/.config/st/'
+alias scripts='cd ~/.config/Scripts'
 
 alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
@@ -45,6 +47,7 @@ alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
 alias ncspot='~/.config/ncspot/ncspot'
 alias tar='tar -zxvf'
+alias vi='nvim'
 alias vim='nvim'
 alias unrar='unrar x'
 alias fetch='clear && neofetch'
@@ -56,12 +59,11 @@ alias mupdf='devour mupdf'
 
 alias xr='sudo xbps-remove -R'
 alias xq='xbps-query -Rs'
+alias xO='sudo xbps-remove -O'
 alias xo='sudo xbps-remove -o'
 alias xl='sudo xbps-install'
 alias xu='sudo xbps-install -Su'
-
-alias cddwm='cd .config/dwm'
-alias cdawesome='cd .config/awesome'
+alias xlist='xbps-query -l'
 
 alias rc.lua='vim .config/awesome/rc.lua'
 alias i3config='vim .config/i3/config'
@@ -83,7 +85,7 @@ alias kitty.conf='vim .config/kitty/kitty.conf'
 ##################################
 
 #LS_COLORS='rs=0:di=1;97:fi=1;90';
-LS_COLORS='rs=0:di=1;34:fi=1;30:ln=1;34'
+LS_COLORS='rs=0:di=1;94:fi=1;37:ln=1;34'
 export LS_COLORS
 
 ##################################
