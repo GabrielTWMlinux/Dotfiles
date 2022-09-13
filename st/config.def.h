@@ -6,7 +6,8 @@
  * font: see http://freedesktop.org/software/fontconfig/fontconfig-user.html
  */
 static char *font = "Inconsolata:pixelsize=22:antialias=true:autohint=true";
-static int borderpx = 9;
+static char *font2[] = { "NotoColorEmoji:pixelsize=10:antialias=true:autohint=true" };
+static int borderpx = 8;
 
 /*
  * What program is execed by st depends of these precedence rules:
@@ -103,7 +104,7 @@ static const char *colorname[] = {
 	"#D20F39",
 	"#40A02B",
 	"#DF8E1D",
-	"#3475f6",
+	"#5c90f7",
 	"#EA76CB",
 	"#179299",
 	"#dddddd",
@@ -113,7 +114,7 @@ static const char *colorname[] = {
 	"#D20F39",
 	"#40a02b",
 	"#df8e1d",
-	"#3475f6",
+	"#5c90f7",
 	"#EA76CB",
 	"#179299",
 	"#BCC0CC",
