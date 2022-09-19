@@ -4,7 +4,7 @@
 
 #PROMPT='%F{8}$%f '
 #PROMPT='%F{243}%1~%f %F{White}%f  '
-PROMPT='%F{#6c7086}%1~%f %F{White}%f  '
+PROMPT='%F{#888888}%1~%f %F{White}%f  '
 
 
 ##################################
@@ -39,7 +39,7 @@ alias dwm='cd ~/.config/dwm'
 alias blocks='cd ~/.config/dwm/dwmblocks'
 alias dmenu='cd ~/.config/dwm/dmenu'
 alias sterm='cd ~/.config/st/'
-alias scripts='cd ~/.config/Scripts'
+alias scripts='cd ~/.config/Scripts && clear && ls'
 
 alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
@@ -54,8 +54,6 @@ alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='youtube-dl'
-alias fetch6000='fm6000 -c blue'
-alias mupdf='devour mupdf'
 
 alias xr='sudo xbps-remove -R'
 alias xq='xbps-query -Rs'
@@ -66,7 +64,6 @@ alias xu='sudo xbps-install -Su'
 alias xlist='xbps-query -l'
 
 alias rc.lua='vim .config/awesome/rc.lua'
-alias i3config='vim .config/i3/config'
 alias yml='vim .config/alacritty/alacritty.yml'
 alias bashrc='vim .bashrc'
 alias gtk='vim .config/gtk-3.0/gtk.css'
@@ -76,7 +73,6 @@ alias bashrc='vim .bashrc'
 alias init.vim='vim .config/nvim/init.vim'
 alias picom.conf='vim .config/picom/picom.conf'
 alias keybinds='vim Documentos/Keybinds'
-alias twm.vim='sudo nvim /usr/share/nvim/runtime/colors/twm.vim'
 alias kitty.conf='vim .config/kitty/kitty.conf'
 
 
@@ -91,7 +87,6 @@ export LS_COLORS
 ##################################
 ############## XDEB ##############
 ##################################
-
 
 export XDEB_OPT_DEPS=true
 export XDEB_OPT_SYNC=true
