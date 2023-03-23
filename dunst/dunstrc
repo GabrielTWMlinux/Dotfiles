@@ -33,7 +33,7 @@
     origin = top-right
 
     # Offset from the origin
-    offset = 11x31
+    offset = 24x25
 
     # Scale factor. It is auto-detected if value is 0.
     scale = 0
@@ -89,7 +89,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#ffffff"
+    frame_color = "#657a8b"
 
     # Define a color for the separator.
     # possible values are:
@@ -436,4 +436,3 @@
 #    set_stack_tag = "volume"
 #
 # vim: ft=cfg
-
