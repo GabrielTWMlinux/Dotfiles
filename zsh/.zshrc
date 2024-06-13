@@ -4,12 +4,14 @@
 
 #PROMPT='%F{8}$%f '
 #PROMPT='%F{243}%1~ %f%F{White}%f  '
-PROMPT='%F{#888888}%1~%f %F{White}%f  '
+PROMPT='%F{#777777}%1~%f %F{White}%f  '
 
 
 ##################################
 ############# BÁSICO #############
 ##################################
+
+export LIBVA_DRIVER_NAME=nvidia
 
 autoload -U compinit
 compinit
@@ -23,12 +25,12 @@ setopt SHARE_HISTORY
 xset r rate 300 50
 
 PATH=$PATH:$HOME/.config/Scripts/
-PATH=$PATH:$HOME/.config/Scripts/ROFI
-PATH=$PATH:$HOME/.config/Scripts/blocks
+PATH=$PATH:$HOME/.config/Scripts/Rofi
+PATH=$PATH:$HOME/.config/Scripts/Wofi
+PATH=$PATH:$HOME/.config/Scripts/dwmblocks
 PATH=$PATH:$HOME/.config/Scripts/dmenu
-PATH=$PATH:$HOME/.config/Scripts/wibar
 PATH=$PATH:$HOME/.config/Scripts/notify
-PATH=$PATH:$HOME/.config/Scripts/rofi
+PATH=$PATH:$HOME/.config/Scripts/hyprland
 
 ##################################
 ############# ALIAS ##############
@@ -47,11 +49,12 @@ alias menu='cd ~/.config/dwm/dmenu && ls'
 alias sterm='cd ~/.config/st/ && ls'
 alias scripts='cd ~/.config/Scripts && ls'
 
+alias arandr1920='wlr-randr --output HDMI-A-1 --mode 1920x1080'
+alias arandr2560='wlr-randr --output HDMI-A-1 --mode 2560x1080'
 alias xrandr2560='xrandr --output HDMI-0 --mode 2560x1080'
 alias xrandr1920='xrandr --output HDMI-0 --mode 1920x1080'
 alias xrandr1280='xrandr --output HDMI-0 --mode 1280x720'
 
-alias ncspot='~/.config/ncspot/ncspot'
 alias tar='tar -zxvf'
 alias vi='nvim'
 alias vim='nvim'
@@ -59,7 +62,9 @@ alias unrar='unrar x'
 alias fetch='clear && neofetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
-alias dl='youtube-dl'
+alias dl='yt-dlp'
+alias hypr='cd ~/.config/hypr/'
+alias way='cd ~/.config/waybar/'
 
 alias xr='sudo xbps-remove -R'
 alias xq='xbps-query -Rs'
@@ -78,22 +83,18 @@ alias zshrc='vim .zshrc'
 alias bashrc='vim .bashrc'
 alias init.vim='vim .config/nvim/init.vim'
 alias picom.conf='vim .config/picom/picom.conf'
-alias Arc='mpv Vídeos/Animes/Arc-V'
-alias Show1='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 1'
-alias Show2='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 2'
-alias Show3='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 3'
-alias Show4='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 4'
-alias Show5='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 5'
-alias Show6='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 6'
-alias Show7='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 7'
-alias Show8='mpv /media/gabriel/extra/Séries/That\ 70s\ Show/Season\ 8'
-alias make='rm config.h && make && sudo make install'
+alias makedwm='rm config.h && make && sudo make install'
 
+function vf(){ file=$(fzf --preview='bat --color=always {}'); [ -f "$file" ] && nvim $file || true } 
 
 ##################################
 ############# COLORS #############
 ##################################
 
-#LS_COLORS='rs=0:di=1;97:fi=1;90';
-LS_COLORS='rs=0:di=1;94:fi=1;37:ln=1;34'
+#LS_COLORS='rs=0:di=0;97:fi=0;90';
+LS_COLORS='rs=1:di=0;94:fi=0;37:ln=0;34'
 export LS_COLORS
+
+# Created by `pipx` on 2024-01-17 05:14:30
+export PATH="$PATH:/home/gabriel/.local/bin"
+eval "$(/home/linuxbrew/.linuxbrew/bin/brew shellenv)"
