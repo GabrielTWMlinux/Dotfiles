@@ -10,22 +10,22 @@ outline-width = 0
 border-width = 0
 min-input-width = 150
 result-spacing = 15
-padding-top = 4
+padding-top = 5
 padding-bottom = 0
 padding-left = 0
 padding-right = 0
 
 prompt-text = " Run   "
 
-background-color = #0d0d12
+background-color = #1a1b26
 text-color= #a7b3bc
 
-prompt-background = #2e334b
+prompt-background = #414868
 prompt-background-padding = 1, 5, 1, 5
-prompt-background-corner-radius = 6
-prompt-color = #a7b3bc
+prompt-background-corner-radius = 4
+prompt-color = #ffffff
 
-selection-background = #2e334b
-selection-color = #a7b3bc
+selection-background = #414868
+selection-color = #ffffff
 selection-background-padding = 1, 5, 1, 5
-selection-background-corner-radius = 6
+selection-background-corner-radius = 4
