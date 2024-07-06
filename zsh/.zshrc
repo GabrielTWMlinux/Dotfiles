@@ -5,7 +5,7 @@
 #PROMPT='%F{8}$%f '
 #PROMPT='%F{243}%1~ %f%F{White}%f  '
 PROMPT='%F{#777777}%1~%f %F{White}%f  '
-
+#RPROMPT='%D{%f-%m-%y} %D{%L:%M:%S}'
 
 ##################################
 ############# BÁSICO #############
@@ -59,7 +59,7 @@ alias tar='tar -zxvf'
 alias vi='nvim'
 alias vim='nvim'
 alias unrar='unrar x'
-alias fetch='clear && neofetch'
+alias fetch='clear && fastfetch'
 alias feh='devour feh'
 alias mpv='devour mpv'
 alias dl='yt-dlp'
